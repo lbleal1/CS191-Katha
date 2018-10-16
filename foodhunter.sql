@@ -13,11 +13,11 @@ create table FoodEstablishment
     contact_number varchar(11) default null, --optional
     contact_person varchar(50) default null, --optional
     -- ATTRIBUTES ONWARDS ARE FOR CAFETERIA ONLY
-    seating_capacity numeric(3,0) default null,
-    free_water varchar(3) default null,
-    additional_cost_for_takeOut varchar(50) default null,
-    bring_your_own_baon_incentive varchar(5) default null,
-    clean_as_you_go varchar(3) default null,
+    seating_capacity numeric(3,0) default 0,
+    free_water varchar(3) default "No",
+    additional_cost_for_takeOut varchar(50) default "P0.00",
+    bring_your_own_baon_incentive varchar(5) default "No",
+    clean_as_you_go varchar(3) default "Yes",
     description varchar(250) default null,
     --baka pwedeng mag add ng minimum price for ulam and max price (price range), a little complicated pa so wag muna
     primary key (fe_ID)
