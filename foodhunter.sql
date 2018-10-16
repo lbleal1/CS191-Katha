@@ -2,7 +2,7 @@
 create table FoodEstablishment
   (
     fe_ID varchar(4),
-    type varchar(9), --cafeteria or kiosk
+    type varchar(9), --cafeteria or kiosk or cafe
     name varchar(20), -- FE name
     fe_avg_rating numeric(2,0), -- on a scale of 1-10, default 0
     total_views numeric(6,0) default null, --max
