@@ -2,7 +2,7 @@
 create table FoodEstablishment
   (
     fe_ID varchar(4),
-    type varchar(9), --cafeteria or kiosk or cafe
+    type varchar(9), --cafeteria or kiosk or cafe or stall
     name varchar(20), -- FE name
     fe_avg_rating numeric(2,0), -- on a scale of 1-10, default 0
     total_views numeric(6,0) default null, --max
@@ -15,7 +15,7 @@ create table FoodEstablishment
     -- ATTRIBUTES ONWARDS ARE FOR CAFETERIA ONLY
     seating_capacity numeric(3,0) default null,
     free_water varchar(3) default null,
-    additional_cost_for_takeOut varchar(5) default null,
+    additional_cost_for_takeOut varchar(50) default null,
     bring_your_own_baon_incentive varchar(5) default null,
     clean_as_you_go varchar(3) default null,
     description varchar(250) default null,
